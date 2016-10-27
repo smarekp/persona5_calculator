@@ -100,6 +100,37 @@ CalcCtrl.prototype.addRecipe = function(recipe) {
 };
 
 CalcCtrl.prototype.fuse2 = function(arcana, persona1, persona2) {
+  if (persona1.name == "Orlov" || persona2.name == "Orlov") {
+    debugger;
+  }
+  if (persona1.rare && persona2.rare) {
+    return null;
+  }
+
+  if (persona1.rare || persona2.rare) {
+    if (persona1.name == "Orlov" || persona2.name == "Orlov") {
+      debugger;
+    }
+    var rarePersona = persona1.rare? persona1 : persona2;
+    var mainPersona = persona1.rare? persona2 : persona1;
+    var modifier = rareCombos[mainPersona.arcana][rarePersonae.indexOf(rarePersona.name)];
+    var personae = personaeByArcana[mainPersona.arcana];
+    var mainPersonaIndex = personae.indexOf(mainPersona);
+    var newPersona = personae[mainPersonaIndex + modifier];
+
+    if (!newPersona) {
+      return null;
+    }
+
+    if (newPersona.special) {
+      if (modifier > 0) modifier++;
+      else if (modifier < 0) modifier--;
+
+      newPersona = personae[mainPersonaIndex + modifier];
+    }
+    return newPersona;
+  }
+
   var level = 1 + Math.floor((persona1.level + persona2.level) / 2);
   var personae = personaeByArcana[arcana];
 
