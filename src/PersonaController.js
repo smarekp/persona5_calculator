@@ -55,7 +55,7 @@ var PersonaController = (function () {
         // stats
         var compediumEntry = personaMap[personaName];
         this.$scope.persona.stats = compediumEntry.stats;
-        this.$scope.persona.statsHeader = ["Strength", "Magic", "Endurance", "Agility", "Luck"];
+        this.$scope.persona.statsHeader = ["St", "Ma", "En", "Ag", "Lu"];
         // elements
         // split the table into 2 for mobile
         var elems = getElems(personaName);
@@ -63,7 +63,7 @@ var PersonaController = (function () {
         this.$scope.persona.elems1 = elems.slice(0, 5);
         this.$scope.persona.elems2 = elems.slice(5);
         // split the table into 2 for mobile
-        var elemsHeader = ["Physical", "Gun", "Fire", "Ice", "Electric", "Wind", "Psychic", "Nuclear", "Bless", "Curse"];
+        var elemsHeader = ["Phys", "Gun", "Fire", "Ice", "Elec", "Wind", "Psy", "Nuke", "Bless", "Curse"];
         this.$scope.persona.elemsHeader = elemsHeader;
         this.$scope.persona.elemsHeader1 = elemsHeader.slice(0, 5);
         this.$scope.persona.elemsHeader2 = elemsHeader.slice(5);
