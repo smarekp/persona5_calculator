@@ -122,6 +122,9 @@ table.centered th, table.centered td {
     .mobile-hidden {
         display: none;
     }
+    .recipe-persona-name {
+        display: block; 
+    }
 }
 
 @media only screen and (min-width: 993px) {
