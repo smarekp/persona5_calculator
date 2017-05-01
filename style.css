@@ -89,9 +89,8 @@ tr:hover td:last-child {
     padding-right: 10px;
 }
 
-table.centered th, table.centered td,
-#statsTable th, #statsTable td {
-    text-align: center;
+table.centered th, table.centered td {
+    text-align: center !important;
 }
 
 @media screen and (min-width: 1080px) {
