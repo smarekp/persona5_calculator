@@ -97,6 +97,21 @@ table.centered th, table.centered td {
     white-space: nowrap;
 }
 
+.pagination-details {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+.glyph-rewind > span:nth-child(1) { padding-left: 0.3em; }
+.glyph-rewind > span:nth-child(2) { position: relative; left: -0.4em; }
+
+.glyph-fastforward > span:nth-child(1) { position: relative; right: -0.4em; }
+.glyph-fastforward > span:nth-child(2) { padding-right: 0.3em; }
+
+.glyph-back > span:nth-child(1) { padding-left: 0.2em; padding-right: 0.2em; }
+
+.glyph-forward > span:nth-child(1) { padding-left: 0.2em; padding-right: 0.2em; }
+
 @media screen and (min-width: 1080px) {
     #skillList {
         width: 80%;
