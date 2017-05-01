@@ -58,7 +58,7 @@ var PersonaController = (function () {
         this.$scope.persona.statsHeader = ["St", "Ma", "En", "Ag", "Lu"];
         // elements
         // split the table into 2 for mobile
-        var elems = getElems(personaName);
+        var elems = personaMap[personaName].elems; // var elems = getElems(personaName);
         this.$scope.persona.elems = elems;
         this.$scope.persona.elems1 = elems.slice(0, 5);
         this.$scope.persona.elems2 = elems.slice(5);
