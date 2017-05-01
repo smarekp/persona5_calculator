@@ -102,15 +102,15 @@ table.centered th, table.centered td {
     margin-right: 0.2em;
 }
 
-.glyph-rewind > span:nth-child(1) { padding-left: 0.3em; }
-.glyph-rewind > span:nth-child(2) { position: relative; left: -0.4em; }
+.glyph-rewind { width: 4em; text-align: center; }
+.glyph-rewind > span:nth-child(2) { margin-left: -0.4em; }
 
-.glyph-fastforward > span:nth-child(1) { position: relative; right: -0.4em; }
-.glyph-fastforward > span:nth-child(2) { padding-right: 0.3em; }
+.glyph-fastforward { width: 4em; text-align: center; }
+.glyph-fastforward > span:nth-child(1) { margin-right: -0.4em; }
 
-.glyph-back > span:nth-child(1) { padding-left: 0.2em; padding-right: 0.2em; }
+.glyph-back { width: 2em; text-align: center; }
 
-.glyph-forward > span:nth-child(1) { padding-left: 0.2em; padding-right: 0.2em; }
+.glyph-forward { width: 2em; text-align: center; }
 
 @media screen and (min-width: 1080px) {
     #skillList {
