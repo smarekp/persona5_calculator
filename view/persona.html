@@ -99,19 +99,25 @@
     <div class="caption">
         <div class="pagination" ng:show="fusionTo.numRecipes > perPage">
             <span ng:click="fusionTo.pageNum = 0">
-                <span style="padding-left: 0.3em;">&#x25c4;</span>
-                <span style="position: relative; left: -0.4em;">&#x25c4;</span>
+                <span class="glyph-rewind">
+                    <span>&#x25c4;</span><span>&#x25c4;</span>
+                </span>
             </span>
             <span ng:click="fusionTo.pageNum = fusionTo.pageNum - 1">
-                <span style="padding-left: 0.2em; padding-right: 0.2em;">&#x25c4;</span>
+                <span class="glyph-back">
+                    <span>&#x25c4;</span><span>&#x25c4;</span>
+                </span>
             </span>
-            <span style="margin: 0 0.2em">Page {{fusionTo.pageNum + 1}} / {{Math.ceil(fusionTo.numRecipes / perPage)}}</span>
+            <span class="pagination-details">Page {{fusionTo.pageNum + 1}} / {{Math.ceil(fusionTo.numRecipes / perPage)}}</span>
             <span ng:click="fusionTo.pageNum = fusionTo.pageNum + 1">
-                <span style="padding-left: 0.2em; padding-right: 0.2em;">&#x25ba;</span>
+                <span class="glyph-forward">
+                    <span>&#x25ba;</span>
+                </span>
             </span>
             <span ng:click="fusionTo.pageNum = fusionTo.lastPage">
-                <span style="position: relative; right: -0.4em;">&#x25ba;</span>
-                <span style="padding-right: 0.3em;">&#x25ba;</span>
+                <span class="glyph-fastforward">
+                    <span>&#x25ba;</span><span>&#x25ba;</span>
+                </span>
             </span>
         </div>
     </div>
@@ -155,11 +161,27 @@
 
     <div class="caption">
         <div class="pagination" ng:show="fusionFrom.numRecipes > perPage">
-            <span ng:click="fusionFrom.pageNum = 0">&#x25c4;<span style="position: relative; left: -0.4em;">&#x25c4;</span></span>
-            <span ng:click="fusionFrom.pageNum = fusionFrom.pageNum - 1">&#x25c4;</span>
-            Page {{fusionFrom.pageNum + 1}} / {{Math.ceil(fusionFrom.numRecipes / perPage)}}
-            <span ng:click="fusionFrom.pageNum = fusionFrom.pageNum + 1">&#x25ba;</span>
-            <span ng:click="fusionFrom.pageNum = fusionFrom.lastPage"><span style="position: relative; right: -0.4em;">&#x25ba;</span>&#x25ba;</span>
+            <span ng:click="fusionFrom.pageNum = 0">
+                <span class="glyph-rewind">
+                    <span>&#x25c4;</span><span>&#x25c4;</span>
+                </span>
+            </span>
+            <span ng:click="fusionFrom.pageNum = fusionFrom.pageNum - 1">
+                <span class="glyph-back">
+                    <span>&#x25c4;</span><span>&#x25c4;</span>
+                </span>
+            </span>
+            <span class="pagination-details">Page {{fusionFrom.pageNum + 1}} / {{Math.ceil(fusionFrom.numRecipes / perPage)}}</span>
+            <span ng:click="fusionFrom.pageNum = fusionFrom.pageNum + 1">
+                <span class="glyph-forward">
+                    <span>&#x25ba;</span>
+                </span>
+            </span>
+            <span ng:click="fusionFrom.pageNum = fusionFrom.lastPage">
+                <span class="glyph-fastforward">
+                    <span>&#x25ba;</span><span>&#x25ba;</span>
+                </span>
+            </span>
         </div>
     </div>
 
