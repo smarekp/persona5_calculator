@@ -89,6 +89,10 @@ tr:hover td:last-child {
     padding-right: 10px;
 }
 
+#statsTable th, #statsTable td {
+    text-align: center;
+}
+
 @media screen and (min-width: 1080px) {
     #skillList {
         width: 80%;
