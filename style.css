@@ -89,6 +89,10 @@ tr:hover td:last-child {
     padding-right: 10px;
 }
 
+.ui.table thead {
+    padding-left: 1px;
+}
+
 table.centered th, table.centered td {
     text-align: center !important;
 }
