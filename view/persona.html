@@ -83,7 +83,7 @@
             <td>{{skill.elem}}</td>
             <td><a href="#/skill#{{skill.name}}">{{skill.name}}</a></td>
             <td>{{skill.description}}</td>
-            <td>{{skill.cost}}</td>
+            <td class="nowrap">{{skill.cost}}</td>
         </tr>
         </tbody>
     </table>
@@ -91,9 +91,9 @@
     <h3>Fusion to this persona ({{fusionTo.numRecipes}} Recipes)</h3>
 
     <div ng:show="!persona.special && !persona.rare">
-        <p><b>Note</b>: Don't get the same results? Remember to configure which DLC persona you own
+        <p><b>Note</b>: Don't get the same results? <br class="desktop-hidden"> Remember to configure which DLC persona you own
             in <a href="#/setting/">Setting</a>.</p>
-        <p>Also, remember that rare persona fusion depends on your persona's current level.</p>
+        <p>Also, remember that rare persona fusion <br class="desktop-hidden"> depends on your persona's current level.</p>
     </div>
 
     <div class="caption">
