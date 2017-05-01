@@ -89,7 +89,7 @@ tr:hover td:last-child {
     padding-right: 10px;
 }
 
-#elemsTable th, #elemsTable td,
+table.centered th, table.centered td,
 #statsTable th, #statsTable td {
     text-align: center;
 }
