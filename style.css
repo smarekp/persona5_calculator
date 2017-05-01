@@ -93,6 +93,10 @@ table.centered th, table.centered td {
     text-align: center !important;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 @media screen and (min-width: 1080px) {
     #skillList {
         width: 80%;
