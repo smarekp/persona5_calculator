@@ -122,6 +122,11 @@ table.centered th, table.centered td {
 .glyph-fastforward { width: 4em; }
 .glyph-fastforward > span:nth-child(1) { margin-right: -0.4em; }
 
+details.html5-details-fix,
+details.html5-details-fix summary {
+    display: inline-block;
+}
+
 @media screen and (min-width: 1080px) {
     #skillList {
         width: 80%;
