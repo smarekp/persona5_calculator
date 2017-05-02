@@ -44,10 +44,6 @@ tr:hover td:last-child {
     border-bottom-right-radius: 5px;
 }
 
-.pagination span {
-    cursor: pointer;
-}
-
 #content {
     display: inline-block;
     margin-top: 10px;
@@ -108,10 +104,12 @@ table.centered th, table.centered td {
 .pagination > span {
     margin-left: 0.25em;
     margin-right: 0.25em;
+    cursor: pointer;
 }
-.pagination .pagination-details {
+.pagination > span.pagination-details {
     display: inline-block;
     min-width: 6em;
+    cursor: default;
 }
 
 .glyph-back { width: 3em; }
