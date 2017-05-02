@@ -102,14 +102,12 @@ table.centered th, table.centered td {
     white-space: nowrap;
 }
 
-.pagination-details,
-.glyph-back,
-.glyph-forward,
-.glyph-rewind,
-.glyph-fastforward {
+.pagination {
+    text-align: center;
+}
+.pagination > span {
     margin-left: 0.25em;
     margin-right: 0.25em;
-    text-align: center;
 }
 
 .glyph-back { width: 3em; }
