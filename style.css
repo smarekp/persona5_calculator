@@ -109,6 +109,10 @@ table.centered th, table.centered td {
     margin-left: 0.25em;
     margin-right: 0.25em;
 }
+.pagination .pagination-details {
+    display: inline-block;
+    min-width: 6em;
+}
 
 .glyph-back { width: 3em; }
 
