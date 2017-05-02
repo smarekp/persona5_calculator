@@ -34,12 +34,12 @@ a:visited {
     background: rgba(64, 46, 24, 0.1);
 }
 
-tr:hover td:first-child {
+thead tr:hover td:first-child {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-tr:hover td:last-child {
+thead tr:hover td:last-child {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
