@@ -6,6 +6,7 @@ body {
     text-align: center;
     margin-top: 0;
     margin-right: 0;
+    overflow-y: scroll;
 }
 
 a {
