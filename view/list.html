@@ -9,27 +9,27 @@
     </div>
 </p>
 
-<table id="list" cellspacing="0" class="ui table striped sortable unstackable" sticky-table>
+<table id="list" cellspacing="0" class="ui table compact striped sortable unstackable" sticky-table>
     <thead>
     <tr>
         <th><a ng-click="sortBy = 'level'; sortReverse = !sortReverse">Level</a></th>
         <th><a ng-click="sortBy = 'name'; sortReverse = !sortReverse">Name</a></th>
         <th><a ng-click="sortBy = 'arcana'; sortReverse = !sortReverse">Arcana</a></th>
-        <th class="mobile-hidden"><a ng-click="sortBy = 'strength'; sortReverse = !sortReverse">St</a></th>
-        <th class="mobile-hidden"><a ng-click="sortBy = 'magic'; sortReverse = !sortReverse">Ma</a></th>
-        <th class="mobile-hidden"><a ng-click="sortBy = 'endurance'; sortReverse = !sortReverse">En</a></th>
-        <th class="mobile-hidden"><a ng-click="sortBy = 'agility'; sortReverse = !sortReverse">Ag</a></th>
-        <th class="mobile-hidden"><a ng-click="sortBy = 'luck'; sortReverse = !sortReverse">Lu</a></th>
-        <th class="mobile-hidden"><a ng-click="sortBy = 'physicalValue'; sortReverse = !sortReverse">Phys</a></th>
-        <th class="mobile-hidden"><a ng-click="sortBy = 'gunValue'; sortReverse = !sortReverse">Gun</a></th>
-        <th class="mobile-hidden"><a ng-click="sortBy = 'fireValue'; sortReverse = !sortReverse">Fire</a></th>
-        <th class="mobile-hidden"><a ng-click="sortBy = 'iceValue'; sortReverse = !sortReverse">Ice</a></th>
-        <th class="mobile-hidden"><a ng-click="sortBy = 'electricValue'; sortReverse = !sortReverse">Elec</a></th>
-        <th class="mobile-hidden"><a ng-click="sortBy = 'windValue'; sortReverse = !sortReverse">Wind</a></th>
-        <th class="mobile-hidden"><a ng-click="sortBy = 'psychicValue'; sortReverse = !sortReverse">Psy</a></th>
-        <th class="mobile-hidden"><a ng-click="sortBy = 'nuclearValue'; sortReverse = !sortReverse">Nuke</a></th>
-        <th class="mobile-hidden"><a ng-click="sortBy = 'blessValue'; sortReverse = !sortReverse">Bless</a></th>
-        <th class="mobile-hidden"><a ng-click="sortBy = 'curseValue'; sortReverse = !sortReverse">Curse</a></th>
+        <th class="mobile-hidden text-center"><a ng-click="sortBy = 'strength'; sortReverse = !sortReverse">St</a></th>
+        <th class="mobile-hidden text-center"><a ng-click="sortBy = 'magic'; sortReverse = !sortReverse">Ma</a></th>
+        <th class="mobile-hidden text-center"><a ng-click="sortBy = 'endurance'; sortReverse = !sortReverse">En</a></th>
+        <th class="mobile-hidden text-center"><a ng-click="sortBy = 'agility'; sortReverse = !sortReverse">Ag</a></th>
+        <th class="mobile-hidden text-center"><a ng-click="sortBy = 'luck'; sortReverse = !sortReverse">Lu</a></th>
+        <th class="mobile-hidden text-center"><a ng-click="sortBy = 'physicalValue'; sortReverse = !sortReverse">Phys</a></th>
+        <th class="mobile-hidden text-center"><a ng-click="sortBy = 'gunValue'; sortReverse = !sortReverse">Gun</a></th>
+        <th class="mobile-hidden text-center"><a ng-click="sortBy = 'fireValue'; sortReverse = !sortReverse">Fire</a></th>
+        <th class="mobile-hidden text-center"><a ng-click="sortBy = 'iceValue'; sortReverse = !sortReverse">Ice</a></th>
+        <th class="mobile-hidden text-center"><a ng-click="sortBy = 'electricValue'; sortReverse = !sortReverse">Elec</a></th>
+        <th class="mobile-hidden text-center"><a ng-click="sortBy = 'windValue'; sortReverse = !sortReverse">Wind</a></th>
+        <th class="mobile-hidden text-center"><a ng-click="sortBy = 'psychicValue'; sortReverse = !sortReverse">Psy</a></th>
+        <th class="mobile-hidden text-center"><a ng-click="sortBy = 'nuclearValue'; sortReverse = !sortReverse">Nuke</a></th>
+        <th class="mobile-hidden text-center"><a ng-click="sortBy = 'blessValue'; sortReverse = !sortReverse">Bless</a></th>
+        <th class="mobile-hidden text-center"><a ng-click="sortBy = 'curseValue'; sortReverse = !sortReverse">Curse</a></th>
     </tr>
     </thead>
     <tbody>
@@ -38,21 +38,21 @@
         <td class="left-border"><a href='#/persona/{{persona.name}}'>{{persona.name}}</a></td>
         <td class="left-border">{{persona.arcana}}</td>
 
-        <td class="mobile-hidden left-border">{{persona.strength}}</td>
-        <td class="mobile-hidden">{{persona.magic}}</td>
-        <td class="mobile-hidden">{{persona.endurance}}</td>
-        <td class="mobile-hidden">{{persona.agility}}</td>
-        <td class="mobile-hidden">{{persona.luck}}</td>
-        <td class="mobile-hidden left-border {{persona.physical}}">{{persona.physical}}</td>
-        <td class="mobile-hidden {{persona.gun}}">{{persona.gun}}</td>
-        <td class="mobile-hidden {{persona.fire}}">{{persona.fire}}</td>
-        <td class="mobile-hidden {{persona.ice}}">{{persona.ice}}</td>
-        <td class="mobile-hidden {{persona.electric}}">{{persona.electric}}</td>
-        <td class="mobile-hidden {{persona.wind}}">{{persona.wind}}</td>
-        <td class="mobile-hidden {{persona.psychic}}">{{persona.psychic}}</td>
-        <td class="mobile-hidden {{persona.nuclear}}">{{persona.nuclear}}</td>
-        <td class="mobile-hidden {{persona.bless}}">{{persona.bless}}</td>
-        <td class="mobile-hidden {{persona.curse}}">{{persona.curse}}</td>
+        <td class="mobile-hidden text-center left-border">{{persona.strength}}</td>
+        <td class="mobile-hidden text-center">{{persona.magic}}</td>
+        <td class="mobile-hidden text-center">{{persona.endurance}}</td>
+        <td class="mobile-hidden text-center">{{persona.agility}}</td>
+        <td class="mobile-hidden text-center">{{persona.luck}}</td>
+        <td class="mobile-hidden text-center left-border {{persona.physical}}">{{persona.physical}}</td>
+        <td class="mobile-hidden text-center {{persona.gun}}">{{persona.gun}}</td>
+        <td class="mobile-hidden text-center {{persona.fire}}">{{persona.fire}}</td>
+        <td class="mobile-hidden text-center {{persona.ice}}">{{persona.ice}}</td>
+        <td class="mobile-hidden text-center {{persona.electric}}">{{persona.electric}}</td>
+        <td class="mobile-hidden text-center {{persona.wind}}">{{persona.wind}}</td>
+        <td class="mobile-hidden text-center {{persona.psychic}}">{{persona.psychic}}</td>
+        <td class="mobile-hidden text-center {{persona.nuclear}}">{{persona.nuclear}}</td>
+        <td class="mobile-hidden text-center {{persona.bless}}">{{persona.bless}}</td>
+        <td class="mobile-hidden text-center {{persona.curse}}">{{persona.curse}}</td>
     </tr>
     </tbody>
 </table>
