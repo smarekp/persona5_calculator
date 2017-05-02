@@ -123,9 +123,10 @@ table.centered th, table.centered td {
 .glyph-fastforward > span:nth-child(1) { margin-right: -0.4em; }
 
 details.html5-details-fix,
-details.html5-details-fix summary {
-    display: inline-block;
-}
+details.html5-details-fix summary { display: inline-block; }
+details.html5-details-fix summary:hover { cursor: pointer; }
+details.html5-details-fix summary::-webkit-details-marker { display:none; }
+details.html5-details-fix > summary:first-of-type { list-style-type: none; }
 
 @media screen and (min-width: 1080px) {
     #skillList {
