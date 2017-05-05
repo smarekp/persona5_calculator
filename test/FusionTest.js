@@ -53,6 +53,9 @@ describe('FusionCalculator', function () {
             it('should return correct persona when have to skip rare midway and skip ingredient when fusing 2 persona', function () {
                 expect(fuseTestWrapper("Take-Minakata", "Hecatoncheires")).to.equal(personaMap["Orthrus"]);
             });
+            it('should return null when have to skip special midway, then skip ingredient, and ingredient is lowest in arcana rank', function () {
+                expect(fuseTestWrapper("Messiah", "Anubis")).to.equal(null);
+            });
         });
         describe('different arcana fusion', function () {
             it('should return null when result level is higher than the highest level persona in the resulting arcana ' +
@@ -71,7 +74,7 @@ describe('FusionCalculator', function () {
                 expect(fuseTestWrapper("Crystal Skull", "Regent")).to.equal(personaMap["Mithra"]);
             });
         });
-        describe('special fusion)', function () {
+        describe('special fusion', function () {
             it('should return Alice when fusing Nebiros and Belial', function () {
                 expect(fuseTestWrapper("Nebiros", "Belial")).to.equal(personaMap["Alice"]);
             });
@@ -94,6 +97,22 @@ describe('FusionCalculator', function () {
             });
             it('should return correct persona when go up one and have special persona as ingredient', function () {
                 expect(fuseTestWrapper("Orlov", "Neko Shogun")).to.equal(personaMap["Kaiwan"]);
+            });
+        });
+        describe('impossible fusions with Judgement', function () {
+            it('should return null when fusing Judgement + Death', function () {
+                expect(fuseTestWrapper("Messiah", "Mandrake")).to.equal(null);
+                expect(fuseTestWrapper("Trumpeter", "Hell Biker")).to.equal(null);
+            });
+            it('should return null when fusing Judgement + Chariot', function () {
+                expect(fuseTestWrapper("Messiah", "Agathion")).to.equal(null);
+            });
+            it('should return null when fusing Judgement + Strength', function () {
+                expect(fuseTestWrapper("Messiah Picaro", "Kelpie")).to.equal(null);
+            });
+            it('should return null when fusing Judgement + Justice', function () {
+                expect(fuseTestWrapper("Messiah Picaro", "Angel")).to.equal(null);
+                expect(fuseTestWrapper("Power", "Anubis")).to.equal(null);
             });
         });
     });
